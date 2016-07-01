@@ -1,0 +1,95 @@
+// =============================================================================
+// Header
+// =============================================================================
+
+// Top of the page header which spans entire viewport.
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Wrapper for centering header content.
+
+.header-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -123px;
+  height: 246px;
+}
+
+// Profile picture in header.
+
+.header-avatar {
+  display: inline-block;
+  img {
+    width: 125px;
+    border-radius: 50%;
+  }
+}
+
+// Content below the profile picture.
+
+.header-content {
+  display: block;
+  max-width: 420px;
+  margin: 35px auto 0;
+  p {
+    margin: 10px 0 0;
+  }
+}
+
+// Clickable arrow pointing down with smooth scroll.
+
+.header-down {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15px;
+  font-size: 28px;
+  color: $gray-darker;
+}
+
+// Responsive
+// =============================================================================
+
+@media all and (max-width: 361px) {
+  .header-wrapper {
+    height: 270px;
+    margin-top: -135px;
+  }
+}
+
+@media all and (max-height: 580px) {
+  .header-avatar img {
+    width: 115px;
+  }
+  .header-content {
+    margin-top: 25px;
+  }
+  .header-down {
+    bottom: 20px;
+  }
+}
+
+@media all and (max-height: 400px) {
+  header {
+    position: relative;
+  }
+  .header-wrapper {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    padding: 75px 0;
+    height: auto;
+  }
+  .header-down {
+    position: relative;
+    bottom: 0;
+  }
+}

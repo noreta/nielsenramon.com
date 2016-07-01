@@ -1,0 +1,53 @@
+// =============================================================================
+// Work
+// =============================================================================
+
+// Displays the projects/company I've built.
+
+.work-item {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  border-bottom: 1px solid $base-border-color;
+  img {
+    display: inline-block;
+    height: 50px;
+  }
+  p {
+    display: innline-block;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -28px;
+    font-size: 35px;
+    color: $gray-light;
+    transition: color $base-transition-speed linear;
+  }
+  &:hover .icon {
+    color: $gray-darker;
+  }
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(medium) {
+  .work-item {
+    padding: 30px 0;
+    p {
+      margin-top: 10px;
+      transition: color $base-transition-speed linear;
+    }
+    .icon {
+      display: none;
+    }
+    &:hover p {
+      color: $gray-darker;
+    }
+  }
+}

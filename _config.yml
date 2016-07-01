@@ -1,0 +1,36 @@
+assets:
+  compress:
+    css: true
+    js: true
+    
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+
+baseurl: /
+
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+ga_analytics: UA-28631876-1
+
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+
+name: Nielsen Ramon
+
+permalink: pretty
+
+url: http://nielsenramon.com

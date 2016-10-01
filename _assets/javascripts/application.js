@@ -19,12 +19,13 @@ $(function() {
 
 // Fade in animation
 
-window.sr = ScrollReveal({
+window.sr = ScrollReveal();
+sr.reveal('.fade-in', {
+  origin: 'top',
   delay: 200,
-  duration: 1000,
+  duration: 700,
   distance: '5px',
+  reset: true,
   easing: 'ease-out',
-  scale: 1,
-  origin: 'top'
-});
-sr.reveal('.fade-in');
+  scale: 1
+}, 300);

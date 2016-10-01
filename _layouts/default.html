@@ -20,7 +20,6 @@
   <meta name="twitter:image" content="{% asset_path background.jpg %}">
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Lato:400" rel="stylesheet" type="text/css">
 
   {% stylesheet application %}
 </head>
@@ -30,13 +29,21 @@
   {% javascript vendor %}
   {% javascript application %}
 
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview');
+    WebFont.load({
+      google: {
+        families: ['Abel', 'Lato:400']
+      }
+    });
   </script>
+
+  {% if site.ga_analytics %}
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  {% endif %}
 </body>
 </html>

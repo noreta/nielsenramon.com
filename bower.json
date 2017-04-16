@@ -1,7 +1,0 @@
-{
-  "name": "nielsenramon.com",
-  "dependencies": {
-    "jquery": "~3.1.1",
-    "scrollreveal": "~3.3.1"
-  }
-}

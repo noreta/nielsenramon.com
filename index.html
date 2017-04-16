@@ -1,15 +1,35 @@
----
-layout: default
-title: "Nielsen Ramon | Interface Designer"
-description: "Freelance Interface Designer living in Belgium. Aiming to craft true web and mobile experiences people love."
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Nielsen Ramon | Interface Designer</title>
+  <meta name="description" content="Freelance Interface Designer living in Belgium. Aiming to craft true web and mobile experiences people love.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<header>
+  <meta property="og:title" content="Nielsen Ramon | Interface Designer">
+  <meta property="og:url" content="http://nielsenramon.com">
+  <meta property="og:description" content="Freelance Interface Designer living in Belgium. Aiming to craft true web and mobile experiences people love.">
+  <meta property="og:site_name" content="Nielsen Ramon">
+  <meta property="og:image" content="/assets/background.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://nielsenramon.com">
+  <meta name="twitter:title" content="Nielsen Ramon | Interface Designer">
+  <meta name="twitter:description" content="Freelance Interface Designer living in Belgium. Aiming to craft true web and mobile experiences people love.">
+  <meta name="twitter:image" content="/assets/background.jpg">
+
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link type="text/css" rel="stylesheet" href="/assets/application.css">
+</head>
+<body>
+  <header>
   <div class="header-wrapper">
     <div class="grid grid-centered">
       <div class="grid-cell is-centered">
-        <a href="{{ site.baseurl }}" title="Nielsen Ramon" class="header-avatar fade-in" style="visibility: hidden;">
-          <img src="{% asset_path avatar.jpg %}" alt="Nielsen Ramon">
+        <a href="/" title="Nielsen Ramon" class="header-avatar fade-in" style="visibility: hidden;">
+          <img src="/assets/avatar.jpg" alt="Nielsen Ramon">
         </a>
         <div class="header-content fade-in" style="visibility: hidden;">
           <h3>Nielsen Ramon</h3>
@@ -106,3 +126,26 @@ description: "Freelance Interface Designer living in Belgium. Aiming to craft tr
   </ul>
   <p>&copy; Copyright 2016. All Rights Reserved. Nielsen Ramon.</p>
 </footer>
+
+
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+  <script type="text/javascript" src="/assets/application.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Abel', 'Lato:400']
+      }
+    });
+  </script>
+
+  
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-28631876-1','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  
+</body>
+</html>
